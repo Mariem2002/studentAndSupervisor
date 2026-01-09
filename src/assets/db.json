@@ -1,0 +1,540 @@
+{
+  "members": [
+    {
+      "id": "2",
+      "cin": "98765432",
+      "nom": "Trabelsi",
+      "prenom": "Mariem",
+      "dateNaissance": "1998-07-21",
+      "dateInscription": "2024-01-15",
+      "photo": null,
+      "type": "ENS",
+      "cv": "mariem_cv.pdf",
+      "email": "mariem.trabelsi@example.com",
+      "password": "abcd",
+      "etablissement": "FST"
+    },
+    {
+      "id": "3",
+      "cin": "11112222",
+      "nom": "Gharbi",
+      "prenom": "Nour",
+      "dateNaissance": "2000-02-08",
+      "dateInscription": "2025-02-01",
+      "photo": null,
+      "type": "ETD",
+      "cv": "nour_cv.pdf",
+      "email": "nour.gharbi@example.com",
+      "password": "pass123",
+      "etablissement": "ISIMS"
+    },
+    {
+      "id": "4",
+      "cin": "44443333",
+      "nom": "Hattab",
+      "prenom": "Firas",
+      "dateNaissance": "1997-09-10",
+      "dateInscription": "2023-09-12",
+      "photo": null,
+      "type": "ADM",
+      "cv": "firas_cv.pdf",
+      "email": "firas.hattab@enis.tn",
+      "password": "admin1",
+      "etablissement": "ENIS"
+    },
+    {
+      "id": "5",
+      "cin": "55556666",
+      "nom": "Saidi",
+      "prenom": "Leila",
+      "dateNaissance": "1996-05-18",
+      "dateInscription": "2024-04-25",
+      "photo": null,
+      "type": "ENS",
+      "cv": "leila_cv.pdf",
+      "email": "leila.saidi@example.com",
+      "password": "ens2024",
+      "etablissement": "ISIM"
+    },
+    {
+      "id": "6",
+      "cin": "77778888",
+      "nom": "Kacem",
+      "prenom": "Yassine",
+      "dateNaissance": "1999-01-30",
+      "dateInscription": "2023-03-11",
+      "photo": null,
+      "type": "ETD",
+      "cv": "yassine_cv.pdf",
+      "email": "yassine.kacem@example.com",
+      "password": "student1",
+      "etablissement": "IHEC"
+    },
+    {
+      "id": "8",
+      "cin": "10101010",
+      "nom": "Bouaziz",
+      "prenom": "Hichem",
+      "dateNaissance": "1994-06-15",
+      "dateInscription": "2022-08-19",
+      "photo": null,
+      "type": "ADM",
+      "cv": "hichem_cv.pdf",
+      "email": "hichem.bz@example.com",
+      "password": "root2022",
+      "etablissement": "ENIT"
+    },
+    {
+      "id": "9",
+      "cin": "90909090",
+      "nom": "Jaziri",
+      "prenom": "Monia",
+      "dateNaissance": "1993-11-05",
+      "dateInscription": "2022-04-01",
+      "photo": null,
+      "type": "ENS",
+      "cv": "monia_cv.pdf",
+      "email": "monia.jaziri@example.com",
+      "password": "teach99",
+      "etablissement": "ISAMM"
+    },
+    {
+      "id": "10",
+      "cin": "30303030",
+      "nom": "Gharsalli",
+      "prenom": "Oussama",
+      "dateNaissance": "1997-12-24",
+      "dateInscription": "2023-05-10",
+      "photo": null,
+      "type": "ETD",
+      "cv": "oussama_cv.pdf",
+      "email": "oussama.gh@example.com",
+      "password": "osama12",
+      "etablissement": "ESPRIT"
+    },
+    {
+      "id": "11",
+      "cin": "80808080",
+      "nom": "Mrad",
+      "prenom": "Ons",
+      "dateNaissance": "1998-03-16",
+      "dateInscription": "2024-09-07",
+      "photo": null,
+      "type": "ETD",
+      "cv": "ons_cv.pdf",
+      "email": "ons.mrad@example.com",
+      "password": "onsM8",
+      "etablissement": "IHEC"
+    },
+    {
+      "id": "12",
+      "cin": "60606060",
+      "nom": "Baccar",
+      "prenom": "Iheb",
+      "dateNaissance": "1995-08-08",
+      "dateInscription": "2021-11-22",
+      "photo": null,
+      "type": "ADM",
+      "cv": "iheb_cv.pdf",
+      "email": "iheb.baccar@example.com",
+      "password": "ib123",
+      "etablissement": "ENIT"
+    },
+    {
+      "id": "13",
+      "cin": "50505050",
+      "nom": "Sfar",
+      "prenom": "Rania",
+      "dateNaissance": "2000-04-09",
+      "dateInscription": "2024-02-12",
+      "photo": null,
+      "type": "ETD",
+      "cv": "rania_cv.pdf",
+      "email": "rania.sfar@example.com",
+      "password": "ran123",
+      "etablissement": "FST"
+    },
+    {
+      "id": "14",
+      "cin": "25252525",
+      "nom": "Mellouli",
+      "prenom": "Adel",
+      "dateNaissance": "1996-09-27",
+      "dateInscription": "2023-03-03",
+      "photo": null,
+      "type": "ENS",
+      "cv": "adel_cv.pdf",
+      "email": "adel.mellouli@example.com",
+      "password": "adel92",
+      "etablissement": "ISIMS"
+    },
+    {
+      "id": "15",
+      "cin": "45454545",
+      "nom": "Chalbi",
+      "prenom": "Nada",
+      "dateNaissance": "1999-06-14",
+      "dateInscription": "2023-06-20",
+      "photo": null,
+      "type": "ETD",
+      "cv": "nada_cv.pdf",
+      "email": "nada.chalbi@example.com",
+      "password": "nada9",
+      "etablissement": "IHEC"
+    },
+    {
+      "id": "16",
+      "cin": "19191919",
+      "nom": "Belhaj",
+      "prenom": "Omar",
+      "dateNaissance": "1994-12-11",
+      "dateInscription": "2022-10-10",
+      "photo": null,
+      "type": "ADM",
+      "cv": "omar_cv.pdf",
+      "email": "omar.bh@example.com",
+      "password": "omar44",
+      "etablissement": "ENIS"
+    },
+    {
+      "id": "17",
+      "cin": "88887777",
+      "nom": "Zoghlami",
+      "prenom": "Sarra",
+      "dateNaissance": "1997-02-04",
+      "dateInscription": "2023-09-01",
+      "photo": null,
+      "type": "ETD",
+      "cv": "sarra_cv.pdf",
+      "email": "sarra.z@example.com",
+      "password": "sarra22",
+      "etablissement": "FSEGS"
+    },
+    {
+      "id": "18",
+      "cin": "13131313",
+      "nom": "Bouraoui",
+      "prenom": "Rami",
+      "dateNaissance": "1993-07-03",
+      "dateInscription": "2021-12-30",
+      "photo": null,
+      "type": "ENS",
+      "cv": "rami_cv.pdf",
+      "email": "rami.bouraoui@example.com",
+      "password": "rami33",
+      "etablissement": "ENST"
+    },
+    {
+      "id": "19",
+      "cin": "67676767",
+      "nom": "Ben Youssef",
+      "prenom": "Hana",
+      "dateNaissance": "1998-09-17",
+      "dateInscription": "2024-03-14",
+      "photo": null,
+      "type": "ETD",
+      "cv": "hana_cv.pdf",
+      "email": "hana.by@example.com",
+      "password": "hana98",
+      "etablissement": "FST"
+    },
+    {
+      "id": "20",
+      "cin": "26262626",
+      "nom": "Chaabane",
+      "prenom": "Khalil",
+      "dateNaissance": "1995-10-20",
+      "dateInscription": "2023-11-09",
+      "photo": null,
+      "type": "ADM",
+      "cv": "khalil_cv.pdf",
+      "email": "khalil.ch@example.com",
+      "password": "khalil20",
+      "etablissement": "ENICarthage"
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "type": "Article",
+      "titre": "Angular Basics",
+      "lien": "https://example.com/angular-basics",
+      "dateApparition": "2023-01-10T00:00:00.000Z",
+      "sourcePdf": "angular_basics.pdf"
+    },
+    {
+      "id": 2,
+      "type": "Paper",
+      "titre": "RxJS in Depth",
+      "lien": "https://example.com/rxjs-depth",
+      "dateApparition": "2023-02-15T00:00:00.000Z",
+      "sourcePdf": "rxjs_depth.pdf"
+    },
+    {
+      "id": 3,
+      "type": "Article",
+      "titre": "TypeScript Tips",
+      "lien": "https://example.com/typescript-tips",
+      "dateApparition": "2023-03-05T00:00:00.000Z",
+      "sourcePdf": "typescript_tips.pdf"
+    },
+    {
+      "id": 4,
+      "type": "Paper",
+      "titre": "NgRx for State Management",
+      "lien": "https://example.com/ngrx-state",
+      "dateApparition": "2023-03-20T00:00:00.000Z",
+      "sourcePdf": "ngrx_state.pdf"
+    },
+    {
+      "id": 5,
+      "type": "Article",
+      "titre": "Reactive Forms",
+      "lien": "https://example.com/reactive-forms",
+      "dateApparition": "2023-04-01T00:00:00.000Z",
+      "sourcePdf": "reactive_forms.pdf"
+    },
+    {
+      "id": 6,
+      "type": "Article",
+      "titre": "Angular Material Components",
+      "lien": "https://example.com/angular-material",
+      "dateApparition": "2023-04-12T00:00:00.000Z",
+      "sourcePdf": "angular_material.pdf"
+    },
+    {
+      "id": 7,
+      "type": "Paper",
+      "titre": "Advanced Routing",
+      "lien": "https://example.com/advanced-routing",
+      "dateApparition": "2023-05-03T00:00:00.000Z",
+      "sourcePdf": "advanced_routing.pdf"
+    },
+    {
+      "id": 8,
+      "type": "Article",
+      "titre": "Lazy Loading Modules",
+      "lien": "https://example.com/lazy-loading",
+      "dateApparition": "2023-05-18T00:00:00.000Z",
+      "sourcePdf": "lazy_loading.pdf"
+    },
+    {
+      "id": 9,
+      "type": "Paper",
+      "titre": "Unit Testing Angular",
+      "lien": "https://example.com/unit-testing",
+      "dateApparition": "2023-06-02T00:00:00.000Z",
+      "sourcePdf": "unit_testing.pdf"
+    },
+    {
+      "id": 10,
+      "type": "Article",
+      "titre": "End-to-End Testing",
+      "lien": "https://example.com/e2e-testing",
+      "dateApparition": "2023-06-15T00:00:00.000Z",
+      "sourcePdf": "e2e_testing.pdf"
+    },
+    {
+      "id": 11,
+      "type": "Paper",
+      "titre": "Angular Performance Tips",
+      "lien": "https://example.com/performance-tips",
+      "dateApparition": "2023-07-01T00:00:00.000Z",
+      "sourcePdf": "performance_tips.pdf"
+    },
+    {
+      "id": 12,
+      "type": "Article",
+      "titre": "Component Communication",
+      "lien": "https://example.com/component-communication",
+      "dateApparition": "2023-07-12T00:00:00.000Z",
+      "sourcePdf": "component_communication.pdf"
+    },
+    {
+      "id": 13,
+      "type": "Paper",
+      "titre": "Dependency Injection",
+      "lien": "https://example.com/dependency-injection",
+      "dateApparition": "2023-08-05T00:00:00.000Z",
+      "sourcePdf": "dependency_injection.pdf"
+    },
+    {
+      "id": 14,
+      "type": "Article",
+      "titre": "Angular Animations",
+      "lien": "https://example.com/angular-animations",
+      "dateApparition": "2023-08-20T00:00:00.000Z",
+      "sourcePdf": "angular_animations.pdf"
+    },
+    {
+      "id": 15,
+      "type": "Paper",
+      "titre": "Forms Validation",
+      "lien": "https://example.com/forms-validation",
+      "dateApparition": "2023-09-01T00:00:00.000Z",
+      "sourcePdf": "forms_validation.pdf"
+    },
+    {
+      "id": 16,
+      "type": "Article",
+      "titre": "Service Workers",
+      "lien": "https://example.com/service-workers",
+      "dateApparition": "2023-09-12T00:00:00.000Z",
+      "sourcePdf": "service_workers.pdf"
+    },
+    {
+      "id": 17,
+      "type": "Paper",
+      "titre": "Angular CLI Tips",
+      "lien": "https://example.com/angular-cli-tips",
+      "dateApparition": "2023-10-03T00:00:00.000Z",
+      "sourcePdf": "angular_cli_tips.pdf"
+    },
+    {
+      "id": 18,
+      "type": "Article",
+      "titre": "Routing Guards",
+      "lien": "https://example.com/routing-guards",
+      "dateApparition": "2023-10-18T00:00:00.000Z",
+      "sourcePdf": "routing_guards.pdf"
+    },
+    {
+      "id": 19,
+      "type": "Paper",
+      "titre": "Internationalization",
+      "lien": "https://example.com/i18n",
+      "dateApparition": "2023-11-02T00:00:00.000Z",
+      "sourcePdf": "i18n.pdf"
+    },
+    {
+      "id": 20,
+      "type": "Article",
+      "titre": "Angular Best Practices",
+      "lien": "https://example.com/best-practices",
+      "dateApparition": "2023-11-12T00:00:00.000Z",
+      "sourcePdf": "angular_best_practices.pdf"
+    }
+  ],
+  "evenements": [
+    {
+      "id": 1,
+      "titre": "Angular Conference",
+      "dateEvenement": "2025-12-01T09:00:00Z",
+      "lieu": "Sfax"
+    },
+    {
+      "id": 2,
+      "titre": "Firebase Hackathon",
+      "dateEvenement": "2025-12-02T10:30:00Z",
+      "lieu": "Tunis"
+    },
+    {
+      "id": 3,
+      "titre": "Web Security Workshop",
+      "dateEvenement": "2025-12-03T14:00:00Z",
+      "lieu": "Sousse"
+    },
+    {
+      "id": 4,
+      "titre": "DevOps Day",
+      "dateEvenement": "2025-12-04T11:00:00Z",
+      "lieu": "Monastir"
+    },
+    {
+      "id": 5,
+      "titre": "TypeScript Meetup",
+      "dateEvenement": "2025-12-05T15:30:00Z",
+      "lieu": "Sfax"
+    },
+    {
+      "id": 6,
+      "titre": "Node.js Workshop",
+      "dateEvenement": "2025-12-06T09:30:00Z",
+      "lieu": "Tunis"
+    },
+    {
+      "id": 7,
+      "titre": "Advanced Angular Training",
+      "dateEvenement": "2025-12-07T13:00:00Z",
+      "lieu": "Sousse"
+    },
+    {
+      "id": 8,
+      "titre": "Cybersecurity Conference",
+      "dateEvenement": "2025-12-08T10:00:00Z",
+      "lieu": "Monastir"
+    },
+    {
+      "id": 9,
+      "titre": "AI Hackathon",
+      "dateEvenement": "2025-12-09T09:00:00Z",
+      "lieu": "Sfax"
+    },
+    {
+      "id": 10,
+      "titre": "Firebase Auth Workshop",
+      "dateEvenement": "2025-12-10T14:30:00Z",
+      "lieu": "Tunis"
+    },
+    {
+      "id": 11,
+      "titre": "React Meetup",
+      "dateEvenement": "2025-12-11T10:00:00Z",
+      "lieu": "Sousse"
+    },
+    {
+      "id": 12,
+      "titre": "Web Security Training",
+      "dateEvenement": "2025-12-12T13:30:00Z",
+      "lieu": "Monastir"
+    },
+    {
+      "id": 13,
+      "titre": "DevOps Conference",
+      "dateEvenement": "2025-12-13T11:00:00Z",
+      "lieu": "Sfax"
+    },
+    {
+      "id": 14,
+      "titre": "Angular Material Workshop",
+      "dateEvenement": "2025-12-14T15:00:00Z",
+      "lieu": "Tunis"
+    },
+    {
+      "id": 15,
+      "titre": "Cloud Hackathon",
+      "dateEvenement": "2025-12-15T09:30:00Z",
+      "lieu": "Sousse"
+    },
+    {
+      "id": 16,
+      "titre": "Advanced Node.js Workshop",
+      "dateEvenement": "2025-12-16T14:00:00Z",
+      "lieu": "Monastir"
+    },
+    {
+      "id": 17,
+      "titre": "Angular Meetup",
+      "dateEvenement": "2025-12-17T10:00:00Z",
+      "lieu": "Sfax"
+    },
+    {
+      "id": 18,
+      "titre": "Firebase Firestore Training",
+      "dateEvenement": "2025-12-18T13:30:00Z",
+      "lieu": "Tunis"
+    },
+    {
+      "id": 19,
+      "titre": "AI & Web Conference",
+      "dateEvenement": "2025-12-19T09:00:00Z",
+      "lieu": "Sousse"
+    },
+    {
+      "id": 20,
+      "titre": "Node.js Security Workshop",
+      "dateEvenement": "2025-12-20T15:00:00Z",
+      "lieu": "Monastir"
+    }
+  ]
+}

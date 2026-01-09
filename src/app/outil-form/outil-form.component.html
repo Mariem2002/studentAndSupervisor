@@ -1,0 +1,29 @@
+<app-navigation></app-navigation>
+<mat-card class="form-card">
+  <mat-card-title>Tool Information</mat-card-title>
+  <mat-card-content>
+    <form *ngIf="form" [formGroup]="form" (ngSubmit)="sub()">
+  
+
+        <!-- Date de Création -->
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Date of creation</mat-label>
+            <input matInput type="date" placeholder="Select date of creation" formControlName="dateCreation">
+        </mat-form-field>
+
+
+        <!-- Source -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Source</mat-label>
+        <input matInput placeholder="Source link" formControlName="source">
+      </mat-form-field>
+
+
+      <button mat-stroked-button color="basic" type="submit">
+        Submit
+      </button>
+
+    </form>
+  </mat-card-content>
+
+</mat-card>

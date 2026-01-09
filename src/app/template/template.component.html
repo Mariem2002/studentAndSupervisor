@@ -1,0 +1,79 @@
+<mat-sidenav-container class="layout-container">
+
+  <!-- 🧭 Sidebar -->
+  <mat-sidenav #drawer mode="over" fixedInViewport="true" class="sidenav">
+    <mat-toolbar color="primary" class="sidenav-header">
+    
+      <span>Laboratoire</span>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard">
+       
+        <span>Dashboard</span>
+      </a>
+
+      <a mat-list-item routerLink="/members">
+        <span>Members</span>
+      </a>
+
+      <a mat-list-item routerLink="/tools">
+        <span>Tools</span>
+      </a>
+
+      <a mat-list-item routerLink="/publications">
+        <span>Articles</span>
+      </a>
+
+      <a mat-list-item routerLink="/evenements">
+        <span>Events</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- 🧱 Main content -->
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="main-toolbar">
+
+      <!-- Menu + Title -->
+      <div class="toolbar-left">
+        <button
+          mat-icon-button
+          aria-label="Toggle sidenav"
+          (click)="drawer.toggle()"
+        >
+        </button>
+        <span class="toolbar-title">Lab</span>
+      </div>
+
+      <!-- User menu -->
+      <div class="toolbar-right">
+        <button
+          mat-button
+          [matMenuTriggerFor]="userMenu"
+          class="user-button"
+        >
+          <img
+            [src]="userAvatar"
+            alt="User avatar"
+            class="avatar"
+          />
+       
+        </button>
+
+        <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item (click)="onProfileClick()">
+            <span>Profile</span>
+          </button>
+          <button mat-menu-item (click)="onLogout()">
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </div>
+    </mat-toolbar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

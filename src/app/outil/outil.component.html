@@ -1,0 +1,61 @@
+<mat-form-field>
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Wikipedia" #input>
+</mat-form-field>
+<app-navigation></app-navigation>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+    <!-- ID -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+    </ng-container>
+
+
+
+   
+
+    <!-- Date of Birth -->
+    <ng-container matColumnDef="dateCreation">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Date of Creation </th>
+      <td mat-cell *matCellDef="let row"> {{row.dateCreation | date}} </td>
+    </ng-container>
+     <!-- Surname -->
+    <ng-container matColumnDef="source">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Source </th>
+      <td mat-cell *matCellDef="let row"> {{row.source}} </td>
+    </ng-container>
+
+ 
+   
+
+    <!-- Actions -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let row">
+        <button id="edit" mat-stroked-button color="basic" [routerLink]="['/outils', row.id, 'edit']">
+          Edit
+        </button>
+        <button id="delete" mat-stroked-button color="warn" (click)="delete(row.id)">
+          Delete
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Header & Row Definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    <!-- No Data Row -->
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" [attr.colspan]="displayedColumns.length">
+        No outil matching the filter "{{input.value}}"
+      </td>
+    </tr>
+
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

@@ -1,0 +1,102 @@
+<app-navigation></app-navigation>
+<mat-card class="form-card">
+  <mat-card-title *ngIf="isStudent">Student Information</mat-card-title>
+  <mat-card-title *ngIf="isSupervisor">Supervisor Information</mat-card-title>
+  <mat-card-content>
+    <form *ngIf="form" [formGroup]="form" (ngSubmit)="sub()">
+
+   
+
+      <!-- CIN -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>CIN</mat-label>
+        <input matInput placeholder="Enter CIN" formControlName="cin">
+      </mat-form-field>
+
+      <!-- Nom -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter last name" formControlName="nom">
+      </mat-form-field>
+
+      <!-- Prenom -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Surname</mat-label>
+        <input matInput placeholder="Enter first name" formControlName="prenom">
+      </mat-form-field>
+
+        <!-- Date de Naissance -->
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Date of birth</mat-label>
+            <input matInput type="date" placeholder="Select date of birth" formControlName="dateNaissance">
+        </mat-form-field>
+
+        <!-- Date d'Inscription -->
+         <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Date of inscription</mat-label>
+            <input matInput type="date" placeholder="Select date of registration" formControlName="dateInscription">
+        </mat-form-field>
+
+        <!-- Photo -->
+         <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Picture</mat-label>
+            <input matInput placeholder="Paste photo link" formControlName="photo">
+        </mat-form-field>
+
+      <!-- Type -->
+        <input type="hidden" formControlName="type">
+      <!-- Hidden type field to set member type -->
+
+        <!-- CV -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>CV</mat-label>
+        <input matInput placeholder="Paste CV link" formControlName="cv">
+      </mat-form-field>
+
+      <!-- Email -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Enter email" formControlName="email">
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Password" formControlName="password">
+      </mat-form-field>
+
+      <!-- Encadrant ID -->
+      <mat-form-field *ngIf="isStudent" appearance="outline" class="full-width">
+        <mat-label>Supervisor ID</mat-label>
+        <input type="number" matInput placeholder="Enter supervisor ID" formControlName="encadrantId">
+      </mat-form-field>
+
+      <!-- Établissement -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Establishment</mat-label>
+        <input matInput placeholder="ENIS, ENIT, ISIMS..." formControlName="etablissement">
+      </mat-form-field>
+      <!-- Diplome -->
+      <mat-form-field *ngIf="isStudent" appearance="outline" class="full-width">
+        <mat-label>Diploma</mat-label>
+        <input matInput placeholder="Enter diploma" formControlName="diplome">
+      </mat-form-field>
+      <!-- Sujet -->
+      <mat-form-field *ngIf="isStudent" appearance="outline" class="full-width">
+        <mat-label>Subject</mat-label>
+        <input matInput placeholder="Enter subject" formControlName="sujet">
+      </mat-form-field>
+      <!-- Grade -->
+      <mat-form-field *ngIf="isSupervisor" appearance="outline" class="full-width">
+        <mat-label>Grade</mat-label>
+        <input matInput placeholder="Enter grade" formControlName="grade">
+      </mat-form-field>
+
+      <button mat-stroked-button color="basic" type="submit">
+        Submit
+      </button>
+
+    </form>
+  </mat-card-content>
+
+</mat-card>

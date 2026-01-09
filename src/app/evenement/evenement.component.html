@@ -1,0 +1,57 @@
+<mat-form-field>
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. DevOps Day" #input>
+</mat-form-field>
+<app-navigation></app-navigation>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+  
+
+    <!-- Title -->
+    <ng-container matColumnDef="titre">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+      <td mat-cell *matCellDef="let row"> {{row.titre}} </td>
+    </ng-container>
+
+    <!-- Date -->
+    <ng-container matColumnDef="dateEvenement">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
+      <td mat-cell *matCellDef="let row"> {{row.dateEvenement | date}} </td>
+    </ng-container>
+
+    <!-- Etablissement -->
+    <ng-container matColumnDef="lieu">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Location </th>
+      <td mat-cell *matCellDef="let row"> {{row.lieu}} </td>
+    </ng-container>
+
+    <!-- Actions -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let row">
+        <button id="edit" mat-stroked-button color="basic" [routerLink]="['/evenements', row.id, 'edit']">
+          Edit
+        </button>
+        <button id="delete" mat-stroked-button color="warn" (click)="delete(row.id)">
+          Delete
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Header & Row Definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    <!-- No Data Row -->
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" [attr.colspan]="displayedColumns.length">
+        No evenement matching the filter "{{input.value}}"
+      </td>
+    </tr>
+
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

@@ -1,0 +1,17 @@
+.table-container {
+  position: relative;
+  overflow: visible;
+  z-index: 10;
+}
+.mat-table {
+  overflow: auto;
+  max-height: 400px;
+}
+#edit, #delete {
+  margin-right: 11px;
+ 
+}
+th {
+  font-size: 15px;
+  font-weight: bold;
+}

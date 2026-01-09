@@ -1,0 +1,19 @@
+<mat-card class="dialog-card">
+  <h2 mat-dialog-title class="dialog-title">
+    <mat-icon color="warn" >!</mat-icon>
+    Are you sure?
+  </h2>
+
+  <mat-dialog-content class="dialog-content">
+    <p>This will permanently delete the element and <b>cannot be undone.</b></p>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end" class="dialog-actions">
+    <button mat-stroked-button color="primary" (click)="onCancel()">
+      Cancel
+    </button>
+    <button mat-stroked-button color="warn" (click)="onDelete()">
+      Delete
+    </button>
+  </mat-dialog-actions>
+</mat-card>

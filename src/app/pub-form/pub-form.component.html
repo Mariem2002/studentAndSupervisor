@@ -1,0 +1,44 @@
+<app-navigation></app-navigation>
+<mat-card class="form-card">
+  <mat-card-title>Tool Information</mat-card-title>
+  <mat-card-content>
+    <form *ngIf="form" [formGroup]="form" (ngSubmit)="sub()">
+  
+        <!-- Type -->
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Type</mat-label>
+            <input matInput placeholder="Type" formControlName="type">
+        </mat-form-field>
+
+        <!-- Titre -->
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Title" formControlName="titre">
+        </mat-form-field>
+
+    <!-- Lien -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Link</mat-label>
+        <input matInput placeholder="Link" formControlName="lien">
+      </mat-form-field>
+
+        <!-- Date d'apparition -->
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Date of appearance</mat-label>
+            <input matInput type="date" placeholder="Select date of appearance" formControlName="dateApparition">
+        </mat-form-field>
+
+        <!-- Source PDF -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Source PDF</mat-label>
+          <input matInput placeholder="PDF source link" formControlName="sourcePdf">
+        </mat-form-field>
+
+      <button mat-stroked-button color="basic" type="submit">
+        Submit
+      </button>
+
+    </form>
+  </mat-card-content>
+
+</mat-card>
